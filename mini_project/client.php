@@ -54,7 +54,7 @@ if($clients === false) {
 </head>
 <body>
     <h1>
-        Bienvenue, <?php echo htmlspecialchars($_SESSION['username']); ?>!
+        Bienvenue, <?php echo $_SESSION['username']; ?>!
     </h1>
 
     <table border="1">
