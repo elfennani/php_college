@@ -30,6 +30,11 @@ if($clients === false) {
     $clients = [];
 }
 
+if(!isset($_SESSION['username'])) {
+    header("Location: index.php");
+    exit();
+}
+
 ?>
 <!DOCTYPE html>
 <html lang="en">
